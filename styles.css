@@ -1,0 +1,265 @@
+* {
+	font-family: "Permanent Marker", cursive, Verdana, Arial;
+	line-height: 1.5;
+}
+
+body {
+	width: 1280px;
+	margin: auto;
+}
+h1 {
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 16px;
+}
+img {
+	border-radius: 45px;
+}
+header h1 a {
+	color: black;
+}
+header h1 a:hover {
+	background-color: lightgray;
+	color: black;
+	border-radius: 45px;
+}
+header ul {
+	text-align: center;
+}
+header li {
+	display: inline-block;
+	margin-right: 100px;
+	list-style: none;
+}
+header li.last-list {
+	margin-right: 0px;
+}
+header a,
+.hero a {
+	text-decoration: none;
+	color: red;
+	padding: 10px;
+}
+header a:hover,
+.hero a:hover {
+	color: #fff;
+	background-color: red;
+	border-radius: 45px;
+}
+header a.first,
+header a.last {
+	background-color: red;
+	color: #fff;
+	border-radius: 45px;
+	padding: 10px;
+}
+main {
+	text-align: center;
+	margin-bottom: 40px;
+}
+main .hero-img {
+	width: 100%;
+}
+.flex-contact {
+	display: flex;
+}
+.flex-contact section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.flex-contact section p {
+	width: 55%;
+}
+.hero {
+	margin-bottom: 30px;
+	background-color: gray;
+	border-radius: 45px;
+	padding: 5px;
+}
+.hero h2 {
+	font-size: 32px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.local img,
+.chef img {
+	height: 400px;
+}
+.cater h3,
+.local h3,
+.chef h3 {
+	font-size: 22px;
+}
+.cater {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.cater h3 {
+	margin-bottom: 5px;
+}
+.cater p {
+	width: 37%;
+	align-self: center;
+	margin-top: 8px;
+}
+#flex-contact, #flex-container {
+	display: flex;
+	margin-bottom: 30px;
+}
+.local,
+.chef {
+	margin: 5px;
+}
+.local p,
+.chef p {
+	margin: 16px 80px;
+}
+footer {
+	text-align: center;
+	background-color: gray;
+	border-radius: 45px;
+}
+footer h2,
+footer p {
+	margin: 0 0 10px 0;
+}
+#form-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 40px 0 40px;
+}
+#form-section h3{
+	margin-bottom: 0;
+}
+form label {
+	font-family: Verdana, Arial, san-serif;
+}
+#contact-form {
+	width: 300px;
+	line-height: 1.5;
+	background-color: gray;
+	padding: 20px;
+}
+input,
+label,
+textarea {
+	display: block;
+	width: 90%;
+}
+select {
+	display: block;
+	width: 92.5%;
+}
+input[type="submit"] {
+	background: red;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: -6px 6px 10px #363432;
+}
+input[type="reset"] {
+	margin-top: 15px;
+	background: white;
+	border: none;
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: -6px 6px 10px #363432;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+	border: 4px solid rgb(251, 149, 149);
+	box-shadow: -6px 6px 10px #363432;
+}
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 3px solid #321ee6;
+}
+label {
+	text-align: left;
+	margin-top: 4px;
+	margin-right: 0;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+textarea {
+	padding: 5px;
+	font-size: 16px;
+	margin-bottom: 12px;
+	border-radius: 4px;
+	border: 1px inset rgb(251, 149, 149);
+}
+fieldset {
+	margin-top: 15px;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border-color: wheat;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 2px;
+}
+fieldset label {
+	margin-left: 0;
+}
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+	outline: 3px solid #321ee6;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	box-shadow: -3px 3px 5px #363432;
+}
+input[type="radio"] + label {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+input[type="radio"] {
+	appearance: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0;
+	border-radius: 0;
+}
+
+input[type="radio"] + label::before {
+	content: "\00a0"; /* Non-breaking space */
+	font-size: 2.25em;
+	line-height: 0.65;
+	border-radius: 50%;
+	display: inline-block;
+	height: 20px;
+	width: 22px;
+	text-align: center;
+	margin-right: 16px;
+	border: 2px solid white; /* Push focus shadow away */
+	background-color: #fff;
+	padding-bottom: 2px;
+}
+
+input[type="radio"]:checked + label::before {
+	content: "\2022";
+	color: #fff;
+	background: red;
+}
+
+input[type="radio"]:focus {
+	outline: none;
+}
+
+input[type="radio"]:focus + label::before {
+	box-shadow: 0 0 0 2px red;
+}
